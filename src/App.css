@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ background-image: linear-gradient(to right top,#d16ba5,#c777b9,#ba83ca,#aa8fd8,#9a9ae1,#8aa7ec,#79b3f4,#69bff8,#52cffe,#41dfff,#46eefa,#5ffbf1);
+   
+
+    /* background-color: black; */
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+
+    border: 1px solid white
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    margin: 40px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.countdown-app {
+    max-width: 780px;
+    text-align: center;
+
+    /* border: 1px solid white; */
+}
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    width: 100%;
+    /* border: 1px solid white */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.countdown__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 160px;
+
+    background-color: #79b3f4;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -20px -20px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.countdown__card__time {
+    display: flex;
+    align-items: center;
+    flex: 120px;
+    
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.countdown__card__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 40px;
+    width: 100%;
+    color: black;
+
+    font-size: 1.25rem;
+    background-color: white;
 }
